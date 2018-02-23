@@ -5,3 +5,22 @@ p{
 	text-align: justify;
 	text-indent: 50px;
 }
+
+body{
+	background-color: rgba(178,232,122,0.5);
+	/*background-image: url("b84.png");*/
+	/*background-color: hsla(150,81%,93%,0.5);*/
+}
+/* Coloca uma borda em volta da área foto-legenda*/
+figure.foto-legenda{
+	border: 8px solid red;
+	box-shadow: 5px 5px 4px black;
+}		
+		
+/*Entrou na tag figure da classe foto legenda e a img serve para fazer com que a borda
+fique em volta da img*/
+figure.foto-legenda img{
+	border: 3px solid green;
+	width: 50%;
+	height: 50%;
+}
