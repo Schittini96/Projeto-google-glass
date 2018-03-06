@@ -7,10 +7,27 @@ p{
 }
 
 body{
-	background-color: rgba(210,180,140,0.5);
-	/*background-image: url("b84.png");*/
-	/*background-color: hsla(150,81%,93%,0.5);*/
+	/*background-color: rgba(255,255,255,0.5);
+	background-image: url("b84.png");
+	background-color: hsla(150,81%,93%,0.5);*/
+	background-color: #dddddd;
 }
+
+div#interface{
+	width: 900px;
+	background-color: #ffffff;
+	margin: -20px auto 0px auto;/*auto - serve para calcular automaticamente as distancias que restam da div para o body*/
+	box-shadow: 0px 0px 15px rgba(0,0,0,1.5);
+	padding: 1px;
+}
+
+/*se quiser ser mais expecifico pode usar div#interface img#icone */ 
+img#icone{
+	position: absolute;
+	left: 900;
+
+}
+
 /* Coloca uma borda em volta da área foto-legenda*/
 figure.foto-legenda{
 	border: 5px solid red;
@@ -37,8 +54,45 @@ figure.foto-legenda figcaption{
  	padding: 10px;
  	opacity: 0;
  	transition: 2s;
-
+ 	box-sizing: border-box;
 }
 figure.foto-legenda:hover figcaption{
 	opacity: 1;		
+}
+
+nav#menu{
+	display: block;/*um bloco pode flutuar pela tela*/
+	left: 100px;
+}
+
+nav#menu h1{
+	display: none;
+}
+
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 500px;
+}
+
+nav#menu li{
+	display: inline-block;
+	background-color: #dddddd;
+	padding: 10px;
+	margin: 2px;
+	transition: background-color 1s;
+
+}
+nav#menu li:hover{
+	background-color: #808080;
+}
+
+nav#menu a{
+	color: #000000;
+	text-decoration: none;
+}
+nav#menu a:hover{
+	color: #ffffff;
 }
