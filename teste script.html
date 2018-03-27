@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>teste</title>
+	<script type="text/javascript">
+		//alert("Ola Mundo");
+		//document.write("Ola Mundo");
+		var quebrada = false;
+		function mudalampada(tipo){
+			if (tipo == 1 && !quebrada){
+				document.getElementyById("luz").src ="_imagens/lampada-acesa.jpg";		
+			}
+			else if (tipo == 2 && !quebrada){
+				document.getElementyById("luz").src ="_imagens/lampada-apagada.jpg";		
+			}
+			else (tipo == 3 && !quebrada){
+				document.getElementyById("luz").src ="_imagens/lampada-quebrada.jpg";		
+				quebrada = true;
+		}
+	}
+	
+</script>
+	</head>
+		<body>
+			<h1>Teste JS</h1>
+			<img id="luz" src="_imagens/lampada-apagada.jpg" onmouseover="mudalampada(1)", onmouseout="mudalampada(2)", onclick="mudalampada(3)">
+		</body>
+	</html>
